@@ -154,7 +154,7 @@ le translate se fait toujours sur lui*/
 
 
 .circle-animation {
-    animation: moove 2s 2s infinite alternate,
+    animation: moove 2s 2s infinite alternate;
 }
 
 @keyframes moove {
