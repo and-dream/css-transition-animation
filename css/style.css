@@ -5,5 +5,65 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: rgb(66, 192, 241);
+}
+
+.container {
     background-color: darksalmon;
+    width: 100px;
+    height: 100px;
+    /* margin: auto; */
+    transition: width 3s 1s, background-color 2s 3s;
+}
+/* transition: durée, délai */
+
+/* au survol de cette div la couleur devient bleu */
+/* modifier la largeur à 300px */
+/* on peut s'amuser à mettre des durées différentes */
+.container:hover {
+    background-color: aqua;
+    width: 300px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(48, 98, 207);
+    transition: 3s;
+}
+
+.link:hover {
+    color: deeppink;
+}
+
+/* une transition c'est une histoire que l'on raconte */
+.transition {
+    width: 200px;
+    height: 300px;
+    background-color: burlywood;
+    transition: width 1s, height 1s 1s, background-color 1s 2s;
+}
+
+.transition:hover {
+    width: 500px;
+    height: 100px;
+    background-color: rgb(11, 158, 184);
+}
+
+.opacite {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    transition: 1s;
+}
+
+.opacite:hover {
+    opacity: 0;
 }
