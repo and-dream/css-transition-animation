@@ -228,3 +228,41 @@ la valeur par défaut est 'ease'
 on peut faire sa propre courbe
 https://cubic-bezier.com
 */
+
+.jump {
+  display: flex;
+  justify-content: center;
+  gap: 20px;  
+  
+}
+
+.jump > div {
+  width: 70px;
+  height: 70px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+.anim1-jump {
+  animation: jump 0.5s infinite alternate ease-in;
+}
+
+
+@keyframes jump {
+from {
+  transform: translateY(0);
+}  
+
+to {
+  transform: translateY(-200%);
+}
+
+}
+
+.anim2-jump {
+  animation: jump 0.5s 0.25s infinite alternate ease-in;
+}
+
+.anim3-jump {
+  animation: jump 0.5s infinite alternate ease-in;
+}
