@@ -164,3 +164,67 @@ le translate se fait toujours sur lui*/
         transform: translate(400%);
     }
 }
+
+/* si on indique pas la durée d'exécution de l'animation se fera une fois, on peut ajouter un délai */
+/* on doit mettre qqch en entrée et qqch en sortie, on peut mettre 0% en point de départ et 100% en point de fin */
+
+
+/* 
+@keyframes moove {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(400%);
+    }
+}
+
+*/
+
+/* on peut lui faire faire un certain nombre de tours, autant qu'on veut 'infinite' */
+
+
+
+/* 
+
+@keyframes moove {
+  0% {
+        transform: translate(0);
+  }
+
+  50%{
+
+  transform: translate(400%);
+  }
+
+  100% {
+      transform: translate(0);
+  }
+}
+*/
+
+/* on peut utiliser une animation où on veut */
+
+/* h1 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(66, 192, 241);
+  animation: moove 5s 4s infinite;
+} */
+
+
+/* 
+On peut jouer sur sa courbe de vitesse
+
+animation:moove 1s 1s infinite alternate linear;
+
+
+animation:moove 1s 1s infinite alternate ease;
+
+la valeur par défaut est 'ease'
+*/
+
+/* 
+on peut faire sa propre courbe
+https://cubic-bezier.com
+*/
